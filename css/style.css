@@ -1,0 +1,875 @@
+@charset "UTF-8";
+
+img {
+    width: 100%;
+}
+
+.fadein {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s;
+}
+
+/*header-----------------------*/
+
+header {
+    height: 80px;
+    background-color: black;
+    display: flex;
+    padding: 0 4%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.logo {
+    width: 100px;
+}
+
+.pc {
+    display: flex;
+    align-items: center;
+}
+
+.pc li {
+    list-style: none;
+    padding-right: 30px;
+    text-align: center;
+}
+
+.pc li a {
+    text-decoration: none;
+    color: white;
+}
+
+.hamburger {
+    display: none;
+}
+
+#mask {
+    display: none;
+}
+
+.sm {
+    display: none;
+}
+
+.sm li {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sm li a {
+    text-decoration: none;
+    color: white;
+}
+
+/*main-------------------------------*/
+main {
+    margin-top: 80px;
+}
+
+.mainvidual {
+    height: 100vh;
+    width: 100%;
+}
+
+.mainvidual img {
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.mainvidual-logo {
+    position: relative;
+}
+
+.main-logo {
+    position: absolute;
+    width: 25%;
+    top: 30%;
+    right: 20%;
+}
+
+.main-section {
+    background-color: black;
+}
+
+.main-section .section-title {
+    color: white;
+    font-size: 48px;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 48px;
+    padding-top: 100px;
+    text-align: center;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    width: 110px;
+    height: 4px;
+    display: inline-block;
+    background-color: white;
+    position: absolute;
+    bottom: -10px;
+    left: calc(50% - 55px)
+}
+
+.promotion1, .promotion2, .promotion3 {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.voice1, .voice2 {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 100px;
+    opacity: 0;
+}
+
+.promotion-contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.promotion-sentence {
+    display: flex;
+    align-items: center;
+}
+
+.promotion-contents-number{
+    color: white;
+    font-size: 48px;
+    padding-left: 50px;
+}
+
+.promotion-contents-descrition {
+    color: white;
+    text-align: center;
+    padding-left: 50px;
+}
+
+.promotion-contents-descrition h2 {
+    font-size: 28px;
+    padding-bottom: 30px;
+}
+
+.promotion-contents-descrition p {
+    font-size: 20px;
+}
+
+.promotion-contents-img {
+    width: 400px;
+}
+
+.promotion2 .promotion-sentence {
+    padding-right: 100px;
+}
+
+.promotion3 {
+    padding-bottom: 100px;
+}
+
+.voice .section-title::after {
+    background-color: black;
+}
+
+.voice1 .promotion-contents-descrition {
+    color: black;
+    text-align: left;
+    padding-left: 50px;
+}
+
+.voice2 .promotion-contents-descrition {
+    color: black;
+    text-align: left;
+    padding-left: 0px;
+}
+
+.voice-img p {
+    text-align: center;
+    font-size: 20px;
+}
+
+.voice2 {
+    margin-bottom: 100px;
+}
+
+.fadein2 {
+    animation: fadein 0.5s 1 forwards;
+
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.trial {
+    background-color: black;
+    text-align: center;
+}
+
+.trial .section-title {
+    color: white;
+}
+
+.trial .section-title::after {
+    display: none;
+}
+
+.trial h2 {
+    font-size: 28px;
+    color: white;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.trial-contact a {
+    font-size: 28px;
+    text-decoration: none;
+    color: white;
+    padding: 20px 100px;
+    background-color: black;
+    border: 3px solid white;
+}
+
+.trial-contact a:hover {
+    color: black;
+    background-color: white;
+}
+
+.SNS {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    padding-bottom: 30px;
+}
+
+.SNS li {
+    width: 40px;
+    list-style: none;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+/*footer-------------------------------*/
+
+footer {
+    background-color: white;
+    text-align: center;
+}
+
+footer p {
+    padding: 5px;
+}
+
+/*about-------------------------------*/
+
+.about {
+    background-color: black;
+}
+
+.about .section-title {
+    color: white;
+}
+
+.photo-detail {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 100px;
+    align-items: center;
+}
+
+.facility-img {
+    width: 400px;
+}
+
+.photo-detail p {
+    color: white;
+    font-size: 20px;
+    line-height: 50px;
+}
+
+.message {
+    width: 500px;
+    font-size: 16px;
+}
+
+.about2 {
+    margin-top: 80px;
+    padding-bottom: 100px;
+}
+
+/*equipment-------------------------------*/
+
+.equipment {
+    background-color: black;
+    padding-bottom: 50px;
+}
+
+.equipment .mainvidual {
+    position: relative;
+    height: 40vh;
+}
+
+.equipment .mainvidual img {
+    height: 40vh;
+    object-fit: cover;
+}
+
+.equipment .mainvidual h1 {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    color: white;
+    font-size: 56px;
+}
+
+.equipment .section-title {
+    color: white;
+    font-size: 36px;
+}
+
+.equipment .promotion-contents-img {
+    width: 300px;
+} 
+
+.equipment .promotion-sentence {
+    align-items: normal;
+}
+
+.equipment h2 {
+    font-size: 24px;
+}
+
+.equipment .promotion-contents-number {
+    font-size: 24px;
+}
+
+.equipment-title {
+    display: flex;
+}
+
+.number {
+    padding-right: 30px;
+}
+
+.equipment .promotion1 {
+    width: 60%;
+}
+
+.equipment .promotion-contents-descrition p {
+    text-align: left;
+}
+
+.equipment .section-title::after {
+    display: none;
+}
+
+/*fee-------------------------------*/
+
+table {
+    margin: 0 auto;
+    width: 700px;
+    text-align: center;
+    height: 400px;
+    border: 2px solid black;
+    margin-bottom: 100px;
+}
+
+.fee .section-title::after {
+    background-color: black;
+}
+
+table th, table td {
+    border: 2px solid black;
+}
+
+.fee h3 {
+    text-align: center;
+    margin-top: 80px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+table p {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.tr1 .th1, .tr1 .th3, .tr2 .td2, .tr3 .td1, .tr3 .td3, .tr4 .td2 {
+    background-color: lightgray;
+}
+
+.th2, .th3 {
+    width: 35%;
+    height: 100px;
+}
+
+.personal-plan {
+    background-color: black;
+}
+
+.personal-plan .section-title {
+    color: white;
+    font-size: 40px;
+}
+
+.personal-plan .section-title::after {
+    display: none;
+}
+
+.personal-plan h3 {
+    color: white;
+    margin-bottom: 0;
+    font-size: 48px;
+}
+
+.personal-plan .contents {
+    width: 80%;
+    background-color: lightgray;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.personal-plan .contents .title {
+    padding-top: 20px;
+    margin-bottom: 50px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.personal-plan .contents dl {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 350px;
+    padding-bottom: 20px;
+}
+
+.personal-plan .contents dt {
+    width: 25%;
+    font-size: 24px;
+}
+
+.personal-plan .contents dd {
+    width: 75%;
+    font-size: 24px;
+}
+
+.contents-parent {
+    padding-bottom: 80px;
+}
+
+/*access-------------------------------*/
+
+.access .section-title::after {
+    background-color: black;
+}
+
+.name {
+    margin-top: 80px;
+    font-size: 36px;
+    text-align: center;
+}
+
+.address {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 50px;
+    line-height: 40px;
+}
+
+.map {
+    margin-top: 50px;
+}
+
+/*contact-------------------------------*/
+
+.contact {
+    background-color: black;
+}
+
+.contact .section-title {
+    color: white;
+}
+
+.contact .section-title::after {
+    display: none;
+}
+
+.guidance {
+    width: 70%;
+    margin: 0 auto;
+    border-bottom: 1px solid white;
+    margin-top: 30px;
+}
+
+.guidance p {
+    color: white;
+}
+
+.contact dl dt {
+    color: white;
+    width: 30%;
+    font-size: 18px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.contact dl dd {
+    background-color: white;
+    width: 60%;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.contact dl .email input,  .contact dl .name input{
+    width: 100%;
+}
+
+.contact dl .check {
+    background-color: black;
+    color: white;
+    display: block;
+}
+
+.contact dl {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 60%;
+    padding-bottom: 20px;
+}
+
+.contact dl .resize {
+    height: auto;
+    width: 100%;
+}
+
+.submit-btn {
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.submit-btn input {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    padding: 20px 50px;
+}
+
+.submit-btn input:hover {
+    background-color: white;
+    color: black;
+}
+
+@media(max-width:800px){
+
+    .pc {
+        display: none;
+    }
+
+    .sm {
+        width: 250px;
+        display: block;
+        background: gray;
+        position: fixed;
+        padding: 50px;
+        left: -250px;
+        top: 0;
+        bottom: 0;
+        opacity: 0;
+        overflow-y: auto;
+        transition: 0.5s;
+        z-index: 20;
+    }
+
+    .open .sm {
+        left: 0;
+        opacity: 1;
+    }
+
+    .hamburger {
+        display: block;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        position: fixed;
+        top: 22px;
+        right: 18px;
+        transition: 0.5s;
+        z-index: 20;
+    }
+    
+    .hamburger span {
+    width: 30px;
+    height: 2px;
+    background-color: white;
+    border-radius: 4px;
+    display: block;
+    position: absolute;
+    left: 0;
+    transition: 0.5s;
+    }
+
+    .hamburger span:nth-child(1) {
+    top: 4px;
+    }
+
+    .hamburger span:nth-child(2) {
+    top: 14px;
+    }
+
+    .hamburger span:nth-child(3) {
+    bottom: 4px;
+    }
+
+    .open .hamburger span:nth-child(1) {
+    transform: translateY(10px) rotate(-45deg);
+    }
+
+    .open .hamburger span:nth-child(2) {
+    opacity: 0;
+    }
+
+    .open .hamburger span:nth-child(3) {
+    transform: translateY(-10px) rotate(45deg);
+    }
+
+    #mask {
+    transition: 0.5s;
+    }
+
+    .open #mask {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    cursor: pointer;
+    display: block;
+    opacity: 0.8;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    }
+
+/*main--------------------------------------*/
+
+.mainvidual {
+    height: 50vh;
+    width: 100%;
+}
+
+.mainvidual img {
+    object-fit: cover;
+    height: 50vh;
+    width: 100%;
+}
+
+.main-logo {
+    width: 40%;
+    top: 20%;
+    right: 0;
+}
+
+.main-section .section-title {
+    font-size: 36px;
+}
+
+.section-title {
+    font-size: 36px;
+    padding-top: 100px;
+    position: relative;
+}
+
+.section-title::after {
+    height: 2px;
+}
+
+.promotion-contents {
+    display: block;
+    text-align: center;
+}
+
+.promotion-sentence {
+    display: block;
+    text-align: center;
+}
+
+.promotion-contents-number {
+    font-size: 24px;
+    padding-left: 0;
+}
+
+.promotion-contents-descrition h2 {
+    font-size: 24px;
+}
+
+.promotion-contents-img {
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 30px;
+} 
+
+.promotion-contents-descrition {
+    padding-left: 0px;
+}
+
+.promotion2 .promotion-sentence {
+    padding-right: 0px;
+}
+
+.voice2 .promotion-contents, .promotion2 .promotion-contents {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.voice12 .promotion-contents-descrition {
+    text-align: center;
+    padding-left: 0;
+}
+
+.voice12 .promotion-contents-descrition h2 {
+    margin-top: 30px;
+}
+
+.trial .section-title {
+    font-size: 28px;
+}
+
+.trial h2 {
+    font-size: 24px;
+}
+
+.trial-contact a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 20px 100px;
+    background-color: black;
+    border: 3px solid white;
+}
+
+.photo-detail {
+    display: block;
+    text-align: center;
+}
+
+.photo-detail p {
+    font-size: 16px;
+}
+
+.facility-img {
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.message {
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+.equipment .mainvidual h1 {
+    font-size: 36px;
+}
+
+.equipment .section-title {
+    font-size: 24px;
+}
+
+.equipment-title {
+    justify-content: center;
+}
+
+.equipment .promotion-contents-descrition p {
+    text-align: center;
+}
+
+table {
+    width: 500px;
+}
+
+table h2 {
+    font-size: 18px;
+}
+
+.fee h3 {
+    font-size: 16px;
+}
+
+.fee p {
+    font-size: 14px;
+}
+
+.personal-plan .section-title {
+    font-size: 24px;
+}
+
+.personal-plan h3 {
+    font-size: 24px;
+}
+
+.personal-plan .contents .title {
+    padding-top: 20px;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.personal-plan .contents dt {
+    font-size: 18px;
+}
+
+.personal-plan .contents dd {
+    font-size: 18px;
+}
+
+.name {
+    margin-top: 50px;
+    font-size: 28px;
+}
+
+.address {
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+.contact dl {
+    display: block;
+}
+
+.contact dl dt {
+    width: 100%;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.contact dl dd {
+    width: 100%;
+    margin-top: 10px;
+}
+}

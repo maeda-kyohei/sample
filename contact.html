@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>absolute GYM</title>
+    <meta name="description" content="テキストテキストテキストテキストテキストテキスト">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/logo.png">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <!-- プラグイン「slick」のcssを読み込む -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo"><a href="index.html"><img src="img/logo.png" alt=""></a></div>
+
+        <ul class="header-menu pc">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">absolute GYM<br>について</a></li>
+            <li><a href="equipment.html">設備一覧</a></li>
+            <li><a href="fee.html">料金表</a></li>
+            <li><a href="access.html">アクセス</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+
+        <ul class="header-menu sm">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">absolute GYM<br>について</a></li>
+            <li><a href="equipment.html">設備一覧</a></li>
+            <li><a href="fee.html">料金表</a></li>
+            <li><a href="access.html">アクセス</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div id="mask"></div>
+    </header>
+
+
+    <main class="contact">
+        <h2 class="section-title">お問い合わせ</h2>
+        <div class="guidance"><p>必要事項を記載ください</p></div>
+        <dl>
+            <dt>メールアドレス</dt>
+            <dd class="email"><input type="email"  placeholder="○○○.jp"></dd>
+            <dt>氏名</dt>
+            <dd class="name"><input type="text"  placeholder="例）鈴木　太郎"></dd>
+            <dt>お問い合わせ種別</dt>
+            <dd class="check"><input type="checkbox">話を聞いてみたい<br>
+            <input type="checkbox">無料トライアルを受けてみたい<br>
+            <input type="checkbox">パーソナルプランについて聞いてみたい</dd>
+            <dt>お問い合わせ内容</dt>
+            <dd><textarea class="resize" rows="5"></textarea></dd>
+        </dl>
+        <p class="submit-btn"><input type="submit" value="送信する"></p>
+    </main>
+
+    <footer>
+        <p>&copy;absolute GYM</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+</body>
